@@ -1,0 +1,152 @@
+.item {
+    position: relative;
+    overflow-x: auto;
+    padding: 0 16px;
+    margin: 0;
+    scroll-snap-type: x mandatory;
+
+    /* Скрываем scrollbar для IE, Edge и Firefox */
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none; /* Firefox */
+
+    /* Скрываем scrollbar для Chrome, Safari и Opera */
+    // .item::-webkit-scrollbar
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    // .item::before
+    // .item::after
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #2f2f37;
+        width: 100%;
+        height: 0.5px;
+    }
+
+    // .item::after
+    &::after {
+        top: unset;
+        bottom: 0;
+    }
+
+    // .item.top::before
+    // .item.top::after
+    &.top::before,
+    &.top::after {
+        height: 1px;
+    }
+
+    // .item.bottom::before
+    &.bottom::before {
+        height: 1px;
+    }
+
+    // .item.bottom::after
+    &.bottom::after {
+        content: none;
+    }
+
+    // .item__element
+    &__element {
+        position: relative;
+        background: none;
+        padding: 16px;
+        max-width: 100%;
+        scroll-snap-align: end;
+    }
+}
+
+.delete {
+    // .delete__icon
+    &__icon {
+        display: flex;
+        cursor: pointer;
+
+        // .delete__icon svg path
+        & svg path {
+            transition: fill 0.2s;
+        }
+
+        // .delete__icon:hover svg path
+        &:hover svg path {
+            fill: #f2f2f3;
+        }
+
+        // .delete__icon__mobile
+        &__mobile {
+            position: absolute;
+            top: 0;
+            right: -130px;
+            background: red;
+            width: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            z-index: 1;
+            scroll-snap-align: end;
+
+            // .delete__icon__mobile svg
+            & svg {
+                transform: scale(1.3);
+            }
+        }
+    }
+}
+
+.drag {
+    // .drag__icon
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: -13px;
+        transform: translate(-100%, -50%);
+
+        // .drag__icon__mobile
+        &__mobile {
+            transform: translate(100%, -50%);
+        }
+    }
+}
+
+.drop {
+    // .drop__target
+    &__target {
+        display: flex;
+        align-items: center;
+        transition: box-shadow 0.2s, background-color 0.2s, background 0.2s, filter 0.2s;
+
+        // .drop__target > span
+        & > span {
+            width: 100%;
+        }
+    }
+
+    // .drop__can
+    &__can {
+        box-shadow: 0px 2px 0px #4c4cff inset, 0px -2px 0px #4c4cff inset, 2px 0px 0px #4c4cff inset,
+            -2px 0px 0px #4c4cff inset;
+    }
+
+    // .drop__hover
+    &__hover {
+        background-color: #4c4cff;
+        background-color: linear-gradient(63.18deg, #801ab3 0%, #4c4cff 100%);
+        box-shadow: 0px 0px 16px 8px rgba(51, 51, 255, 0.25), 0px 0px 8px 8px rgba(51, 51, 255, 0.25);
+        filter: drop-shadow(0px 0px 24px rgba(51, 51, 255, 0.5));
+    }
+}
+
+.empty {
+    // .empty__text
+    &__text {
+        width: 100%;
+        text-align: center;
+    }
+}

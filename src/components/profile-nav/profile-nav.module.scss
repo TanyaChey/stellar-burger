@@ -1,0 +1,43 @@
+.nav {
+    max-width: 320px;
+
+    // .nav__list
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        // .nav__list_item
+        &__item {
+            display: flex;
+            align-items: center;
+            height: 64px;
+
+            // .nav__list_item.mobile
+            &.mobile {
+                height: auto;
+            }
+        }
+    }
+
+    /* mobile */
+    // .nav__submenu
+    &__submenu {
+        flex-wrap: nowrap;
+        height: 0;
+        transition: height 0.3s;
+        overflow: hidden;
+
+        // .nav__submenu.active
+        &.active {
+            height: 180px;
+        }
+    }
+}
+
+.link {
+    cursor: pointer;
+}
+.active {
+    color: inherit;
+}

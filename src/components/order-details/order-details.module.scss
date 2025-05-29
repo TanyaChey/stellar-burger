@@ -1,0 +1,46 @@
+.section {
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+
+    // .section__mobile
+    &__mobile {
+        max-height: calc(100vh - 105px);
+    }
+}
+
+.ingredients {
+    position: relative;
+    max-height: 312px;
+    height: calc(100vh - 586px);
+    overflow: overlay;
+    z-index: 0;
+
+    // .ingredients__mobile
+    &__mobile {
+        max-height: unset;
+        height: auto;
+        padding-bottom: 56px;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // .footer__mobile
+    &__mobile {
+        background: var(--bg-color-head);
+        padding: 16px;
+        margin: auto -16px 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}

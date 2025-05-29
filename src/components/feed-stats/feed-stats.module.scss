@@ -1,0 +1,42 @@
+.section {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 192px);
+    overflow-y: overlay;
+
+    @media (orientation: portrait), (max-width: 1150px) {
+        height: calc(100vh - 196px);
+    }
+
+    // .section::-webkit-scrollbar-track
+    &::-webkit-scrollbar-track {
+        margin-bottom: 40px;
+    }
+}
+
+.inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+
+    // .status__column
+    &__column {
+        width: 100%;
+    }
+}
+
+.order_list {
+    display: flex;
+    justify-content: space-between;
+
+    // .order_list__column
+    &__column {
+        // margin-right: 36px;
+    }
+}

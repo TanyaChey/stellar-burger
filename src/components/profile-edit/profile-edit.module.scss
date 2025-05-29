@@ -1,0 +1,19 @@
+.form {
+    // .form__mobile
+    &__mobile {
+        width: 100%;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+
+    // .buttons__mobile
+    &__mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        width: fit-content;
+        margin: auto;
+    }
+}

@@ -1,0 +1,19 @@
+.item {
+    position: relative;
+    cursor: pointer;
+    color: inherit;
+    transition: opacity 0.1s;
+}
+.img {
+    display: block;
+    width: 100%;
+}
+.text {
+    text-align: center;
+}
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}

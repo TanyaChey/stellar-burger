@@ -1,0 +1,32 @@
+.img {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #000;
+    border: 2px solid #801ab3;
+
+    // .img:nth-child(1) - .img:nth-child(6)
+    @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+            z-index: #{7 - $i};
+        }
+    }
+
+    // .img + .img
+    & + .img {
+        margin-left: -16px;
+    }
+
+    // .img__mobile
+    &__mobile {
+        width: 32px;
+        height: 32px;
+
+        // .img__mobile + .img__mobile
+        & + .img__mobile {
+            margin-left: -8px;
+        }
+    }
+}

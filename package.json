@@ -1,0 +1,68 @@
+{
+    "name": "react-stellar-burger",
+    "version": "0.1.0",
+    "private": true,
+    "author": "tatiana",
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.9.3",
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/user-event": "^13.5.0",
+        "@types/fetch-mock": "^7.3.5",
+        "@types/node-fetch": "^2.6.4",
+        "@types/react-transition-group": "^4.4.5",
+        "@types/redux-logger": "^3.0.9",
+        "@types/redux-mock-store": "^1.0.3",
+        "@ya.praktikum/react-developer-burger-ui-components": "^1.14.0",
+        "react": "^18.2.0",
+        "react-dnd": "^16.0.1",
+        "react-dnd-html5-backend": "^16.0.1",
+        "react-dnd-touch-backend": "^16.0.1",
+        "react-dom": "^18.2.0",
+        "react-redux": "^8.0.5",
+        "react-router-dom": "^6.10.0",
+        "react-scripts": "5.0.1",
+        "react-transition-group": "^4.4.5",
+        "react-uuid": "^2.0.0",
+        "redux": "^4.2.1",
+        "redux-thunk": "^2.4.2",
+        "reselect": "^4.1.7",
+        "sass": "^1.61.0",
+        "typescript": "^4.9.5",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@testing-library/react": "^14.0.0",
+        "@types/jest": "^29.5.0",
+        "@types/node": "^18.15.11",
+        "@types/react": "^18.0.35",
+        "@types/react-dnd": "^3.0.2",
+        "@types/react-dom": "^18.0.11",
+        "@types/reselect": "^2.2.0",
+        "redux-devtools-extension": "^2.13.9",
+        "redux-logger": "^3.0.6"
+    }
+}

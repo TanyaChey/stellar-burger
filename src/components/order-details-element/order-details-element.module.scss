@@ -1,0 +1,15 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    flex-grow: 1;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}

@@ -1,0 +1,19 @@
+.section {
+    margin: 0 -8px;
+}
+.sum {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 -8px;
+    background: var(--bg-color-head);
+    border-radius: 15px 15px 0px 0px;
+    padding: 16px;
+
+    // .sum img
+    // .sum svg
+    & img,
+    & svg {
+        margin-left: 9px;
+    }
+}
