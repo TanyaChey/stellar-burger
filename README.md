@@ -31,6 +31,7 @@ Stellar Burger - веб-приложение по заказу космичес�
 
 ## Скриншоты
 
+![](test.png)
 ![](authorization.png)
 ![](burger.png)
 ![](order-feed.png)
